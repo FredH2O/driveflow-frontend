@@ -17,16 +17,26 @@ function Hero() {
         </h1>
 
         <div>
-          <p>ダブリン初の日本人向けガレージ</p>
-          <p className="italic">
-            Dublin's Elite Garage Precision care for your vehicle, rooted in
+          <p className="text-white text-sm tracking-widest uppercase">
+            ダブリン初の日本人向けガレージ
+          </p>
+          <p className="italic text-gray-300">
+            Dublin's Elite Garage — Precision care for your vehicle, rooted in
             Japanese craftsmanship.
           </p>
         </div>
 
         <div className="flex flex-row justify-center gap-4">
-          {buttons.map((title) => (
-            <button className="border p-3 rounded-full" key={title}>
+          {buttons.map((title, index) => (
+            <button
+              className={`cursor-pointer px-6 py-3 rounded-full font-semibold duration-200
+                ${
+                  index === 0
+                    ? "bg-purple-500 text-white hover:bg-purple-600"
+                    : "border border-white hover:text-zinc-800 hover:bg-white"
+                }`}
+              key={title}
+            >
               {title}
             </button>
           ))}
