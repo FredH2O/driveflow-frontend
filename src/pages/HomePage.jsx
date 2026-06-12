@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import usePosts from "../hooks/usePosts";
+import Services from "../components/Services";
 
 function HomePage() {
   const posts = usePosts();
@@ -9,11 +10,14 @@ function HomePage() {
     <>
       <Navbar />
       <Hero />
-      {posts.map((post) => (
-        <div key={post.id}>
-          <h2>{post.title.rendered}</h2>
-        </div>
-      ))}
+      <div className="max-w-5xl mx-auto">
+        <Services />
+        {posts.map((post) => (
+          <div key={post.id}>
+            <h2>{post.title.rendered}</h2>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
