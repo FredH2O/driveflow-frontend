@@ -29,7 +29,7 @@ function Hero() {
         <div className="flex flex-row justify-center gap-4">
           {buttons.map((title, index) => (
             <button
-              className={`cursor-pointer px-6 py-3 rounded-full font-semibold duration-200
+              className={`cursor-pointer px-6 py-3 rounded-r-full rounded-bl-full font-semibold duration-200
                 ${
                   index === 0
                     ? "bg-purple-500 text-white hover:bg-purple-600"
