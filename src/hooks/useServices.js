@@ -8,7 +8,7 @@ export function useServices() {
     async function fetchServices() {
       try {
         const result = await fetch(
-          "http://driveflow.local/wp-json/wp/v2/service",
+          "http://driveflow.local/wp-json/wp/v2/services",
         );
         const data = await result.json();
 
