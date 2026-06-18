@@ -1,22 +1,23 @@
 import { useEffect, useState } from "react";
 
-export function useServices() {
-  const [services, setServices] = useState([]);
+export function useTestimonials() {
+  const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function fetchServices() {
+    async function fetchTestimonials() {
       try {
         const result = await fetch(
-          "http://driveflow-backend.local/wp-json/wp/v2/services",
+          "http://driveflow-backend.local/wp-json/wp/v2/testimonials",
         );
 
         if (!result.ok) {
-          throw new Error("Failed to fetch services!");
+          throw new Error("Failed to fetch testimonials");
         }
+
         const data = await result.json();
 
-        setServices(data);
+        setTestimonials(data);
       } catch (err) {
         console.error(err);
       } finally {
@@ -24,8 +25,8 @@ export function useServices() {
       }
     }
 
-    fetchServices();
+    fetchTestimonials();
   }, []);
 
-  return { services, loading };
+  return { testimonials, loading };
 }

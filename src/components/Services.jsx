@@ -13,7 +13,7 @@ function Services() {
         Services <span className="text-purple-400 font-light">サービス</span>
       </h2>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {visibleServices.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
