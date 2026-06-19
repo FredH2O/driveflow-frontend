@@ -1,16 +1,75 @@
-# React + Vite
+# 🚗 Driveflow Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React and Vite frontend for the Driveflow project.
 
-Currently, two official plugins are available:
+## 📖 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Driveflow is a headless WordPress project that separates content management from the user interface.
 
-## React Compiler
+This repository contains the frontend application built with React. Content is retrieved from a separate WordPress backend through the WordPress REST API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- WordPress REST API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Fetches content from WordPress
+- Component-based architecture
+- Custom React hooks
+- Responsive layout
+- API-driven content
+
+## 🔗 Related Repository
+
+The frontend requires the Driveflow backend to provide content through the WordPress REST API.
+
+## 🚀 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/FredH2O/driveflow-frontend.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will run at:
+
+```text
+http://localhost:5173
+```
+
+## Environment
+
+Update the API URL to point to your local WordPress installation.
+
+Example:
+
+```javascript
+http://driveflow.local/wp-json/wp/v2/services
+```
+
+## Learning Goals
+
+This project was created to practice:
+
+- React development
+- API consumption
+- Custom hooks
+- Headless WordPress architecture
+- Frontend and backend integration
