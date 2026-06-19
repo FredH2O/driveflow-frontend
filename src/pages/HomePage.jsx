@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import usePosts from "../hooks/usePosts";
 import Services from "../components/Services";
+import Testimonials from "../components/Testimonials";
 
 function HomePage() {
   const posts = usePosts();
@@ -12,6 +13,7 @@ function HomePage() {
       <Hero />
       <div className="max-w-5xl mx-auto">
         <Services />
+        <Testimonials />
         {posts.map((post) => (
           <div key={post.id}>
             <h2>{post.title.rendered}</h2>

@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 export function useTestimonials() {
   const [testimonials, setTestimonials] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchTestimonials() {
       try {
         const result = await fetch(
-          "http://driveflow-backend.local/wp-json/wp/v2/testimonials",
+          "http://driveflow-backend.local/wp-json/wp/v2/testimonials?_embed=1",
         );
 
         if (!result.ok) {
@@ -19,7 +20,7 @@ export function useTestimonials() {
 
         setTestimonials(data);
       } catch (err) {
-        console.error(err);
+        setError(err.message);
       } finally {
         setLoading(false);
       }
@@ -28,5 +29,5 @@ export function useTestimonials() {
     fetchTestimonials();
   }, []);
 
-  return { testimonials, loading };
+  return { testimonials, loading, error };
 }
