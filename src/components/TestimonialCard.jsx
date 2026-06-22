@@ -4,7 +4,11 @@ function TestimonialCard({ name, comment, image }) {
       <p className="text-gray-600 italic leading-relaxed mb-4">“{comment}”</p>
 
       <div>
-        <img src={image} alt={name} />
+        <img
+          className="w-20 h-20 border rounded-full bg-purple-500 object-cover"
+          src={image}
+          alt={name}
+        />
         <h3 className="text-gray-900 font-semibold text-sm tracking-wide">
           {name}
         </h3>
