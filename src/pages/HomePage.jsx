@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import usePosts from "../hooks/usePosts";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
+import CounterSection from "../components/CounterSection";
 
 function HomePage() {
   const posts = usePosts();
@@ -19,6 +20,7 @@ function HomePage() {
             <h2>{post.title.rendered}</h2>
           </div>
         ))}
+        <CounterSection />
       </div>
     </>
   );
