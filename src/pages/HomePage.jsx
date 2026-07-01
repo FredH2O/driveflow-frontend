@@ -4,7 +4,7 @@ import usePosts from "../hooks/usePosts";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import CounterSection from "../components/CounterSection";
-import { ApiTest } from "../components/ApiTest";
+import BookingForm from "../components/BookingForm";
 
 function HomePage() {
   const posts = usePosts();
@@ -22,7 +22,7 @@ function HomePage() {
           </div>
         ))}
         <CounterSection />
-        <ApiTest />
+        <BookingForm />
       </div>
     </>
   );
