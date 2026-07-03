@@ -11,9 +11,12 @@ function Counter({ title, count }) {
   }, [count, value]);
 
   return (
-    <div className="flex flex-col p-5 gap-3">
-      <p className="text-4xl">{title}</p>
-      <motion.h2 className="text-xl">{rounded}</motion.h2>
+    <div className="bg-white border border-purple-100 rounded-2xl shadow-sm p-6 flex flex-col items-center gap-3 hover:shadow-md transition">
+      <p className="text-purple-600 text-lg font-medium text-center">{title}</p>
+
+      <motion.h2 className="text-4xl font-bold text-purple-800">
+        {rounded}
+      </motion.h2>
     </div>
   );
 }
