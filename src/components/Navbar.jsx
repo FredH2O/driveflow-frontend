@@ -1,7 +1,12 @@
 const Navigation = [
-  { english: "HOME", japanese: "家" },
-  { english: "ABOUT", japanese: "について" },
-  { english: "CONTACT", japanese: "接触" },
+  { english: "HOME", japanese: "家", path: "/" },
+  { english: "ABOUT", japanese: "について", path: "/about" },
+  { english: "CONTACT", japanese: "接触", path: "/contact" },
+  {
+    english: "STAFF LOGIN",
+    japanese: "スタッフログイン",
+    path: "/staff-login",
+  },
 ];
 function Navbar() {
   return (
