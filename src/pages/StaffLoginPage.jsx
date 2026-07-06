@@ -25,7 +25,10 @@ function StaffLoginPage() {
 
     if (data.token) {
       localStorage.setItem("token", data.token);
-      localStorage.setItem("staff", email);
+      localStorage.setItem("staff_email", data.user_email);
+      localStorage.setItem("staff_name", data.user_display_name);
+      localStorage.setItem("staff_nicename", data.user_nicename);
+
       window.location.href = "/dashboard";
     } else {
       console.log("Login failed", data);

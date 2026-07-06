@@ -1,5 +1,5 @@
 function Dashboard() {
-  const staff = localStorage.getItem("staff");
+  const staff = localStorage.getItem("staff_name");
 
   return (
     <section className="h-screen flex justify-center items-center bg-zinc-950 text-zinc-100">
