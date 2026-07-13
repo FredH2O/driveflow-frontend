@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-export function useBooking() {
-  const [bookings, setBooking] = useState([]);
+export function useBookings() {
+  const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -17,9 +17,9 @@ export function useBooking() {
         }
 
         const data = await result.json();
-        setBooking(data);
+        setBookings(data);
       } catch (err) {
-        setError(err);
+        setError(err.message);
       } finally {
         setLoading(false);
       }

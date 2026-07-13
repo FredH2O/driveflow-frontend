@@ -1,11 +1,12 @@
-function BookingCard({ customerName, date, time, service, status }) {
+function BookingCard({ customerName, phone, date, time, service, status }) {
   return (
-    <div>
-      <h2>{customerName}</h2>
-      <p>{date}</p>
-      <p>{time}</p>
-      <p>{service}</p>
-      <p>{status}</p>
+    <div className="bg-zinc-900 p-4 rounded-lg mt-4">
+      <h2 className="text-xl">{customerName}</h2>
+      <p>Phone: {phone}</p>
+      <p>Date: {date}</p>
+      <p>Time: {time}</p>
+      <p>Service: {service}</p>
+      <p>Status: {status}</p>
     </div>
   );
 }
