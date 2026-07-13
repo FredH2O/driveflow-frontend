@@ -1,17 +1,24 @@
 import BookingCard from "./BookingCard";
 
 function BookingList({ bookings }) {
+  function handleStatusChange(id, newStatus) {
+    console.log("Booking:", id);
+    console.log("New status:", newStatus);
+  }
+
   return (
     <section>
       {bookings.map((booking) => (
         <BookingCard
           key={booking.id}
-          customerName={booking.customer_name}
-          phone={booking.phone_number}
-          date={booking.booking_date}
-          time={booking.booking_time}
-          service={booking.service}
-          status={booking.booking_status}
+          id={booking.id}
+          customerName={booking.acf.customer_name}
+          phone={booking.acf.phone_number}
+          date={booking.acf.booking_date}
+          time={booking.acf.booking_time}
+          service={booking.acf.service}
+          status={booking.acf.booking_status}
+          onStatusChange={handleStatusChange}
         />
       ))}
     </section>
