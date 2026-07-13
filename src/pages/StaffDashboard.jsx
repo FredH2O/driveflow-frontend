@@ -9,13 +9,29 @@ function StaffDashboard() {
   if (error) return <p>{error}</p>;
 
   return (
-    <section className="h-screen flex justify-center items-center bg-zinc-950 text-zinc-100">
-      <div className="text-center">
-        <h1 className="text-2xl">Welcome {staff}!</h1>
+    <main className="min-h-screen bg-zinc-950 text-zinc-100 pt-24">
+      <div className="max-w-7xl mx-auto px-6 py-10">
+        <header className="mb-10">
+          <h1 className="text-4xl font-bold">Welcome back, {staff}</h1>
 
+          <p className="mt-2 text-zinc-400">
+            Manage customer bookings and update their status.
+          </p>
+        </header>
+
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-semibold">Bookings</h2>
+
+          <div className="bg-zinc-900 border-zinc-800 rounded-lg px-4 py-2">
+            <span className="text-purple-400 font-semibold">
+              {bookings.length}
+            </span>{" "}
+            Total Bookings
+          </div>
+        </div>
         <BookingList bookings={bookings} />
       </div>
-    </section>
+    </main>
   );
 }
 
