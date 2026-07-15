@@ -1,9 +1,31 @@
 import BookingCard from "./BookingCard";
 
 function BookingList({ bookings }) {
-  function handleStatusChange(id, newStatus) {
+  // call api
+  async function handleStatusChange(id, newStatus) {
     console.log("Booking:", id);
     console.log("New status:", newStatus);
+
+    try {
+      const response = await fetch(
+        `http://driveflow-backend.local/wp-json/driveflow/v1/bookings/${id}/status`,
+        {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            status: newStatus,
+          }),
+        },
+      );
+
+      const data = await response.json();
+
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
