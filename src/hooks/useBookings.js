@@ -30,6 +30,7 @@ export function useBookings() {
 
   return {
     bookings,
+    setBookings,
     loading,
     error,
   };

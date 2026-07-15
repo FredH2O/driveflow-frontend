@@ -1,10 +1,24 @@
 import BookingCard from "./BookingCard";
 
-function BookingList({ bookings }) {
+function BookingList({ bookings, setBookings }) {
   // call api
   async function handleStatusChange(id, newStatus) {
     console.log("Booking:", id);
     console.log("New status:", newStatus);
+
+    setBookings((previousBookings) =>
+      previousBookings.map((booking) =>
+        booking.id === id
+          ? {
+              ...booking,
+              acf: {
+                ...booking.acf,
+                booking_status: newStatus,
+              },
+            }
+          : booking,
+      ),
+    );
 
     try {
       const response = await fetch(

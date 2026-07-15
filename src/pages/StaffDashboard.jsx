@@ -3,7 +3,7 @@ import BookingList from "../components/BookingList";
 
 function StaffDashboard() {
   const staff = localStorage.getItem("staff_name");
-  const { bookings, loading, error } = useBookings();
+  const { bookings, setBookings, loading, error } = useBookings();
 
   if (loading) return <p>Loading bookings...</p>;
   if (error) return <p>{error}</p>;
@@ -29,7 +29,7 @@ function StaffDashboard() {
             Total Bookings
           </div>
         </div>
-        <BookingList bookings={bookings} />
+        <BookingList bookings={bookings} setBookings={setBookings} />
       </div>
     </main>
   );
