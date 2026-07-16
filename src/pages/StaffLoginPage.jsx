@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { getToken } from "../utils/auth";
 
 function StaffLoginPage() {
   const navigate = useNavigate();
@@ -9,8 +10,7 @@ function StaffLoginPage() {
   const [rememberMe, setRememberMe] = useState(false);
 
   useEffect(() => {
-    const token =
-      localStorage.getItem("token") || sessionStorage.getItem("token");
+    const token = getToken();
 
     if (token) {
       navigate("/dashboard");
@@ -82,7 +82,7 @@ function StaffLoginPage() {
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
             />
-            Stay logged in
+            Remember me on this device
           </label>
 
           <button
