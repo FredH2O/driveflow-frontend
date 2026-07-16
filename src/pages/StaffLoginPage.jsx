@@ -1,8 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function StaffLoginPage() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
+
+  useEffect(() => {
+    const token =
+      localStorage.getItem("token") || sessionStorage.getItem("token");
+
+    if (token) {
+      navigate("/dashboard");
+    }
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -24,14 +37,16 @@ function StaffLoginPage() {
     const data = await res.json();
 
     if (data.token) {
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("staff_email", data.user_email);
-      localStorage.setItem("staff_name", data.user_display_name);
-      localStorage.setItem("staff_nicename", data.user_nicename);
+      const storage = rememberMe ? localStorage : sessionStorage;
+
+      storage.setItem("token", data.token);
+      storage.setItem("staff_email", data.user_email);
+      storage.setItem("staff_name", data.user_display_name);
+      storage.setItem("staff_nicename", data.user_nicename);
 
       window.location.href = "/dashboard";
     } else {
-      console.log("Login failed", data);
+      alert("Login failed", data);
     }
   };
 
@@ -47,19 +62,32 @@ function StaffLoginPage() {
             type="text"
             placeholder="Username"
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-emerald-500 transition"
+            className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-purple-500 transition"
           />
 
           <input
             type="password"
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-emerald-500 transition"
+            className="w-full px-4 py-3 rounded-lg bg-zinc-800 border border-zinc-700 focus:outline-none focus:border-purple-500 transition"
           />
+
+          <label
+            htmlFor=""
+            className="flex items-center gap-2 text-sm text-zinc-400 cursor-pointer"
+          >
+            <input
+              className="accent-purple-600"
+              type="checkbox"
+              checked={rememberMe}
+              onChange={(e) => setRememberMe(e.target.checked)}
+            />
+            Stay logged in
+          </label>
 
           <button
             type="submit"
-            className="w-full py-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 transition font-medium tracking-wide"
+            className="w-full cursor-pointer py-3 rounded-lg bg-purple-600 hover:bg-purple-500 transition font-medium tracking-wide"
           >
             Enter Dashboard
           </button>
