@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { getToken } from "../utils/auth";
+import { useAuth } from "../hooks/useAuth";
 
 function StaffLoginPage() {
+  const { login, isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
@@ -10,12 +11,10 @@ function StaffLoginPage() {
   const [rememberMe, setRememberMe] = useState(false);
 
   useEffect(() => {
-    const token = getToken();
-
-    if (token) {
+    if (isAuthenticated) {
       navigate("/dashboard");
     }
-  }, [navigate]);
+  }, [isAuthenticated, navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -44,7 +43,8 @@ function StaffLoginPage() {
       storage.setItem("staff_name", data.user_display_name);
       storage.setItem("staff_nicename", data.user_nicename);
 
-      window.location.href = "/dashboard";
+      login();
+      navigate("/dashboard");
     } else {
       alert("Login failed", data);
     }

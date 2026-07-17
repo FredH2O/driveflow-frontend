@@ -1,9 +1,10 @@
 import { useBookings } from "../hooks/useBookings";
 import BookingList from "../components/BookingList";
 import { useNavigate } from "react-router-dom";
-import { clearAuth } from "../utils/auth";
+import { useAuth } from "../hooks/useAuth";
 
 function StaffDashboard() {
+  const { logout } = useAuth();
   const navigate = useNavigate();
 
   const staff =
@@ -12,7 +13,7 @@ function StaffDashboard() {
   const { bookings, setBookings, loading, error } = useBookings();
 
   function handleLogOut() {
-    clearAuth();
+    logout();
     navigate("/staff-login");
   }
 
