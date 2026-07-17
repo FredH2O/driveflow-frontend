@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import StaffLoginPage from "./pages/StaffLoginPage";
 import Navbar from "./components/Navbar";
 import StaffDashboard from "./pages/StaffDashboard";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/staff-login" element={<StaffLoginPage />} />
         <Route path="/dashboard" element={<StaffDashboard />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,6 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import CounterSection from "../components/CounterSection";
 import BookingForm from "../components/BookingForm";
-import Footer from "../components/Footer";
 
 function HomePage() {
   return (
@@ -15,7 +14,6 @@ function HomePage() {
         <Testimonials />
         <BookingForm />
       </div>
-      <Footer />
     </>
   );
 }
