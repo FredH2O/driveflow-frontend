@@ -6,6 +6,7 @@ import StaffLoginPage from "./pages/StaffLoginPage";
 import Navbar from "./components/Navbar";
 import StaffDashboard from "./pages/StaffDashboard";
 import Footer from "./components/Footer";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/staff-login" element={<StaffLoginPage />} />
         <Route path="/dashboard" element={<StaffDashboard />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
       <Footer />
     </div>

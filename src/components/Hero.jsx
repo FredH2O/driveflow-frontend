@@ -1,6 +1,10 @@
+import { NavLink } from "react-router-dom";
 import background from "../assets/driveflow-bg.jpg";
 
-const buttons = ["Book a Service", "Our Story"];
+const buttons = [
+  { name: "Book a Service", link: "/contact" },
+  { name: "Our Story", link: "/about" },
+];
 
 function Hero() {
   return (
@@ -9,6 +13,7 @@ function Hero() {
         className="absolute inset-0 h-full w-full object-cover"
         src={background}
         alt="Driveflow's Background"
+        draggable="false"
       />
       <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/70 to-transparent"></div>
       <div className="relative flex flex-col gap-3 z-10 text-center">
@@ -27,18 +32,19 @@ function Hero() {
         </div>
 
         <div className="flex flex-row justify-center gap-4">
-          {buttons.map((title, index) => (
-            <button
-              className={`cursor-pointer px-6 py-3 rounded-r-full rounded-bl-full font-semibold duration-200
-                ${
-                  index === 0
-                    ? "bg-purple-500 text-white hover:bg-purple-600"
-                    : "border border-white hover:text-zinc-800 hover:bg-white"
-                }`}
-              key={title}
+          {buttons.map((navigation, index) => (
+            <NavLink
+              to={navigation.link}
+              key={navigation.name}
+              className={`px-6 py-3 rounded-r-full rounded-bl-full font-semibold duration-200
+    ${
+      index === 0
+        ? "bg-purple-500 text-white hover:bg-purple-600"
+        : "border border-white hover:bg-white hover:text-zinc-800"
+    }`}
             >
-              {title}
-            </button>
+              {navigation.name}
+            </NavLink>
           ))}
         </div>
       </div>

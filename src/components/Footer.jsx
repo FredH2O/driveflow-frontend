@@ -1,9 +1,10 @@
+import { NavLink } from "react-router-dom";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Book a Service", href: "/booking" },
+  { label: "Book a Service", href: "/contact" },
 ];
 
 const services = [
@@ -40,14 +41,13 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-2">
             {quickLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-sm text-neutral-400 hover:text-purple-400 transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
+              <NavLink key={link.label} to={link.href}>
+                <li>
+                  <span className="text-sm text-neutral-400 hover:text-purple-400 transition-colors">
+                    {link.label}
+                  </span>
+                </li>
+              </NavLink>
             ))}
           </ul>
         </div>
