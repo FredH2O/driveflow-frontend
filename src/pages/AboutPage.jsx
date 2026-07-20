@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function AboutPage() {
   return (
-    <section className="max-w-3xl h-screen flex justify-center flex-col mx-auto">
+    <section className="max-w-3xl h-screen flex justify-center flex-col mx-auto mt-54 p-10 md:mt-0 lg:p-0">
       <div className="text-center mb-14">
         <p className="text-purple-600 text-sm tracking-widest uppercase mb-2">
           私たちについて

@@ -34,7 +34,7 @@ const reasons = [
 
 function WhyChooseUs() {
   return (
-    <section className="py-16 px-16 mt-10 bg-gray-50">
+    <section className="py-16 px-10 mt-10 bg-gray-50">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* Content */}

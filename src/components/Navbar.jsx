@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div className="fixed top-5 left-0 right-0 flex justify-center z-50">
-      <nav className="w-3/4 rounded-full p-5 bg-zinc-700/50 backdrop-blur-md">
+      <nav className="sm:w-3/4 sm:rounded-full rounded-2xl p-5 bg-zinc-700/50 backdrop-blur-md">
         <ul className="flex justify-center gap-8">
           {navigation.map((item) => (
             <li

@@ -22,7 +22,7 @@ function ContactPage() {
   }
 
   return (
-    <section className="max-w-3xl h-screen flex justify-center flex-col mx-auto">
+    <section className="max-w-3xl h-screen flex justify-center flex-col mx-auto px-8 my-32 md:my-4 lg:my-0">
       <div className="text-center mb-14">
         <p className="text-purple-600 text-sm tracking-widest uppercase mb-2">
           お問い合わせ
