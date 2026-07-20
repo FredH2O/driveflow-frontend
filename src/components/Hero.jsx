@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import background from "../assets/driveflow-bg.jpg";
+import background from "../assets/images/driveflow-bg.jpg";
 
 const buttons = [
   { name: "Book a Service", link: "/contact" },

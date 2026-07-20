@@ -3,6 +3,7 @@ import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 import CounterSection from "../components/CounterSection";
 import BookingForm from "../components/BookingForm";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 function HomePage() {
   return (
@@ -12,8 +13,9 @@ function HomePage() {
       <div className="max-w-5xl mx-auto">
         <Services />
         <Testimonials />
-        <BookingForm />
       </div>
+      <WhyChooseUs />
+      <BookingForm />
     </>
   );
 }
