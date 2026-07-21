@@ -50,21 +50,27 @@ npm install
 
 ### 3. Point the app at your local WordPress backend
 
-Create a `.env` file in the root of the project (same folder as `package.json`):
+Copy the example environment file and update it with your local backend URL:
+
+```bash
+cp .env.example .env
+```
 
 ```text
 VITE_API_URL=http://driveflow-backend.local/wp-json/wp/v2
 ```
 
-Replace the URL with your own local backend address if it's different. This value is used by the custom hooks in `src/hooks/` (`useAuth.js`, `useBookings.js`, `usePosts.js`, `useServices.js`, `useTestimonials.js`) to build each API request, for example:
+Replace the URL with your own local backend address if it's different. This value is used by several custom hooks in `src/hooks/` (`useBookings.js`, `usePosts.js`, `useServices.js`, `useTestimonials.js`) to build each API request, for example:
 
 ```javascript
 const result = await fetch(`${import.meta.env.VITE_API_URL}/services`);
 ```
 
+Authentication (`useAuth.js` / `AuthContext`) is handled separately via `src/utils/auth.js`.
+
 > ⚠️ **Note:** Vite only reads `.env` on startup. If you create or edit it while the dev server is running, restart `npm run dev` for the change to take effect.
 
-> 🔒 `.env` is already included in `.gitignore` and should never be committed, since it can hold environment-specific or sensitive config.
+> 🔒 `.env` is gitignored and should never be committed, since it can hold environment-specific or sensitive config. Use `.env.example` as the reference template instead.
 
 ### 4. Start the development server
 
