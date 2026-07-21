@@ -57,7 +57,7 @@ function Navbar() {
 
           <button onClick={() => setIsOpen(!isOpen)} className="text-2xl ">
             <span
-              className={`block transition-transform duration-150 ${isOpen ? "rotate-90" : ""}`}
+              className={`block transition-transform duration-150 ${isOpen ? "rotate-90 text-purple-300" : ""}`}
             >
               ☰
             </span>

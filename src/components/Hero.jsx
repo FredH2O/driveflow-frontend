@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import background from "../assets/images/driveflow-bg.jpg";
 
 const buttons = [
-  { name: "Book a Service", link: "/contact" },
-  { name: "Our Story", link: "/about" },
+  { name: "Book a Service", link: "/contact", hover: "サービス" },
+  { name: "Our Story", link: "/about", hover: "話" },
 ];
 
 function Hero() {
@@ -21,7 +21,7 @@ function Hero() {
           Drive<span className="text-purple-500">flow</span>
         </h1>
 
-        <div>
+        <div className="p-6">
           <p className="text-white text-sm tracking-widest uppercase">
             ダブリン初の日本人向けガレージ
           </p>
