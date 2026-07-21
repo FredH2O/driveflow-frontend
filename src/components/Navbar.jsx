@@ -39,7 +39,7 @@ function Navbar() {
                   {item.english}
                 </span>
 
-                <span className="absolute inset-0 flex items-center text-purple-500 justify-center opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <span className="absolute inset-0 flex items-center text-purple-700 justify-center opacity-0 translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                   {item.japanese}
                 </span>
               </NavLink>

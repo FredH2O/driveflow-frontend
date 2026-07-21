@@ -12,6 +12,11 @@ function Testimonials() {
       <h2 className="text-center font-bold text-3xl mb-10">
         Testimonials <span className="text-purple-400 font-light">証言</span>
       </h2>
+      <p className="text-center text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Our customers trust DriveFlow for honest advice, quality workmanship,
+        and dependable vehicle care. See what drivers have to say about their
+        experience with our team.
+      </p>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {testimonials.map(({ id, title, acf, image_url }, index) => (
           <motion.div
