@@ -50,25 +50,21 @@ npm install
 
 ### 3. Point the app at your local WordPress backend
 
-The API base URL is currently hardcoded inside each custom hook in `src/hooks/`:
+Create a `.env` file in the root of the project (same folder as `package.json`):
 
-- `useAuth.js`
-- `useBookings.js`
-- `usePosts.js`
-- `useServices.js`
-- `useTestimonials.js`
-
-Open each file and update the URL to match your local backend, for example:
-
-```javascript
-// Before
-const API_URL = "http://driveflow-backend.local/wp-json/wp/v2/services";
-
-// After (replace with your own local site URL)
-const API_URL = "http://your-site-name.local/wp-json/wp/v2/services";
+```text
+VITE_API_URL=http://driveflow-backend.local/wp-json/wp/v2
 ```
 
-> ⚠️ **Note:** Because the URL is duplicated across five files, a mismatch in even one of them can cause requests to silently fail. See [Future Improvements](#-future-improvements) below.
+Replace the URL with your own local backend address if it's different. This value is used by the custom hooks in `src/hooks/` (`useAuth.js`, `useBookings.js`, `usePosts.js`, `useServices.js`, `useTestimonials.js`) to build each API request, for example:
+
+```javascript
+const result = await fetch(`${import.meta.env.VITE_API_URL}/services`);
+```
+
+> ⚠️ **Note:** Vite only reads `.env` on startup. If you create or edit it while the dev server is running, restart `npm run dev` for the change to take effect.
+
+> 🔒 `.env` is already included in `.gitignore` and should never be committed, since it can hold environment-specific or sensitive config.
 
 ### 4. Start the development server
 
@@ -81,10 +77,6 @@ The application will run at:
 ```text
 http://localhost:5173
 ```
-
-## 🔧 Future Improvements
-
-- **Centralize the API URL.** Move it into a single `src/api/config.js` file (or a `.env` file using Vite's `VITE_` prefix convention) so it only needs to be updated in one place instead of five.
 
 ## 🎯 Learning Goals
 
