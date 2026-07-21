@@ -8,9 +8,7 @@ export function useBookings() {
   useEffect(() => {
     async function fetchBookings() {
       try {
-        const result = await fetch(
-          "http://driveflow-backend.local/wp-json/wp/v2/bookings",
-        );
+        const result = await fetch(`${import.meta.env.VITE_API_URL}/bookings`);
 
         if (!result.ok) {
           throw new Error("Failed fetching booking, try again later.");

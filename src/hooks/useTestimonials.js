@@ -9,7 +9,7 @@ export function useTestimonials() {
     async function fetchTestimonials() {
       try {
         const result = await fetch(
-          "http://driveflow-backend.local/wp-json/wp/v2/testimonials?_embed=1",
+          `${import.meta.env.VITE_API_URL}/testimonials?_embed=1`,
         );
 
         if (!result.ok) {

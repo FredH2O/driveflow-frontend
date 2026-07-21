@@ -7,9 +7,7 @@ export function useServices() {
   useEffect(() => {
     async function fetchServices() {
       try {
-        const result = await fetch(
-          "http://driveflow-backend.local/wp-json/wp/v2/services",
-        );
+        const result = await fetch(`${import.meta.env.VITE_API_URL}/services`);
 
         if (!result.ok) {
           throw new Error("Failed to fetch services!");
