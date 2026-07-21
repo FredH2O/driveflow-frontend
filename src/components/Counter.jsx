@@ -11,12 +11,10 @@ function Counter({ title, count }) {
   }, [count, value]);
 
   return (
-    <div className="bg-white border border-purple-100 rounded-2xl shadow-sm p-6 flex flex-col items-center gap-3 hover:shadow-md transition">
-      <p className="text-purple-600 text-lg font-medium text-center">{title}</p>
+    <div className="bg-zinc-700 border border-purple-100 rounded-2xl shadow-sm p-6 flex flex-col items-center gap-3 hover:shadow-md transition">
+      <p className="text-white text-lg font-medium text-center">{title}</p>
 
-      <motion.h2 className="text-4xl font-bold text-purple-800">
-        {rounded}
-      </motion.h2>
+      <motion.h2 className="text-4xl font-bold text-white">{rounded}</motion.h2>
     </div>
   );
 }
