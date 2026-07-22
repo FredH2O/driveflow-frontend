@@ -2,6 +2,10 @@
 
 A React and Vite frontend for the Driveflow project.
 
+## Preview
+
+![Driveflow homepage](./src//assets/full-screenshot.png)
+
 ## 📖 Overview
 
 Driveflow is a headless WordPress project that separates content management from the user interface.
