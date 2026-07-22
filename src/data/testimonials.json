@@ -28,7 +28,7 @@
     "acf": {
       "comment_testimonial": "Amazing service! would highly recommend to anyone looking to get their NCT done."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/profile-pic.png",
+    "image_url": "/images/people/person1.jpg",
     "_links": {
       "self": [
         {
@@ -97,7 +97,7 @@
     "acf": {
       "comment_testimonial": "Smooth process and fantastic customer support. Couldn't ask for more."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/prof-3-scaled.jpg",
+    "image_url": "/images/people/person2.jpg",
     "_links": {
       "self": [
         {
@@ -166,7 +166,7 @@
     "acf": {
       "comment_testimonial": "The team was friendly and helpful throughout. Great experience overall."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/prof-1-scaled.jpg",
+    "image_url": "/images/people/person3.jpg",
     "_links": {
       "self": [
         {
@@ -235,7 +235,7 @@
     "acf": {
       "comment_testimonial": "Fast, professional, and reliable. I would definitely use Driveflow again."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/prof-5-scaled.jpg",
+    "image_url": "/images/people/person4.jpg",
     "_links": {
       "self": [
         {
@@ -304,7 +304,7 @@
     "acf": {
       "comment_testimonial": "Excellent service from start to finish. Everything was explained clearly."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/prof-4-scaled.jpg",
+    "image_url": "/images/people/person5.jpg",
     "_links": {
       "self": [
         {
@@ -373,7 +373,7 @@
     "acf": {
       "comment_testimonial": "Driveflow made the whole process simple and stress free. Highly recommended."
     },
-    "image_url": "https://driveflow-backend.local/wp-content/uploads/2026/06/prof-2-scaled.jpg",
+    "image_url": "/images/people/person6.jpg",
     "_links": {
       "self": [
         {
