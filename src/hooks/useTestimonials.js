@@ -21,8 +21,12 @@ export function useTestimonials() {
 
         setTestimonials(data);
       } catch (err) {
-        setError(err.message);
+        console.warn(
+          "Live API unreachable, using fallback data instead.",
+          err.message,
+        );
         setTestimonials(fallbackTestimonials);
+        setError(null);
       } finally {
         setLoading(false);
       }
