@@ -66,6 +66,7 @@ function BookingForm() {
             placeholder="Name"
             value={form.name}
             onChange={handleChange}
+            autoComplete="name"
             className="w-full px-4 py-2 border placeholder:text-slate-300 text-slate-500 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
           />
 
@@ -75,6 +76,7 @@ function BookingForm() {
             placeholder="Phone Number"
             value={form.phone}
             onChange={handleChange}
+            autoComplete="tel"
             className="w-full px-4 py-2 border placeholder:text-slate-300 text-slate-500 border-purple-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
           />
 
