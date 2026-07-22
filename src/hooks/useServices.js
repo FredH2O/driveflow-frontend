@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import fallbackServices from "../data/services.json";
 
 export function useServices() {
   const [services, setServices] = useState([]);
@@ -17,6 +18,7 @@ export function useServices() {
         setServices(data);
       } catch (err) {
         console.error(err);
+        setServices(fallbackServices);
       } finally {
         setLoading(false);
       }

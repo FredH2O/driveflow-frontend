@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import fallbackTestimonials from "../data/testimonials.json";
 
 export function useTestimonials() {
   const [testimonials, setTestimonials] = useState([]);
@@ -21,6 +22,7 @@ export function useTestimonials() {
         setTestimonials(data);
       } catch (err) {
         setError(err.message);
+        setTestimonials(fallbackTestimonials);
       } finally {
         setLoading(false);
       }

@@ -1,0 +1,380 @@
+[
+  {
+    "id": 20,
+    "date": "2026-06-17T20:54:14",
+    "date_gmt": "2026-06-17T20:54:14",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=20"
+    },
+    "modified": "2026-06-24T13:49:48",
+    "modified_gmt": "2026-06-24T13:49:48",
+    "slug": "collection-delivery",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-collection-delivery",
+    "title": {
+      "rendered": "Collection / Delivery"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-20",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "集荷・配達",
+      "illustration": "delivery",
+      "description": "We collect your vehicle and return it to you — fully serviced and ready to go."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/20",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=20"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "date": "2026-06-17T20:53:42",
+    "date_gmt": "2026-06-17T20:53:42",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=18"
+    },
+    "modified": "2026-06-17T21:05:18",
+    "modified_gmt": "2026-06-17T21:05:18",
+    "slug": "full-car-servicing",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-full-car-servicing",
+    "title": {
+      "rendered": "Full Car Servicing"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-18",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "定期点検",
+      "illustration": "servicing",
+      "description": "Routine maintenance including oil changes, filters, and brake checks."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/18",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=18"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "date": "2026-06-17T20:53:22",
+    "date_gmt": "2026-06-17T20:53:22",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=17"
+    },
+    "modified": "2026-06-17T21:05:41",
+    "modified_gmt": "2026-06-17T21:05:41",
+    "slug": "digital-diagnostics",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-digital-diagnostics",
+    "title": {
+      "rendered": "Digital Diagnostics"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-17",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "診断サービス",
+      "illustration": "diagnostics",
+      "description": "Advanced computer diagnostics to identify issues before they become problems."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/17",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=17"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "date": "2026-06-17T20:53:00",
+    "date_gmt": "2026-06-17T20:53:00",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=16"
+    },
+    "modified": "2026-06-17T21:05:53",
+    "modified_gmt": "2026-06-17T21:05:53",
+    "slug": "oem-parts-supply",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-oem-parts-supply",
+    "title": {
+      "rendered": "OEM Parts Supply"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-16",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "部品供給",
+      "illustration": "parts",
+      "description": "Genuine and aftermarket parts sourced directly from trusted suppliers."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/16",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "date": "2026-06-17T20:52:33",
+    "date_gmt": "2026-06-17T20:52:33",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=15"
+    },
+    "modified": "2026-06-17T21:07:38",
+    "modified_gmt": "2026-06-17T21:07:38",
+    "slug": "body-engine-repairs",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-body-engine-repairs",
+    "title": {
+      "rendered": "Body / Engine Repairs"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-15",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "修理サービス",
+      "illustration": "repairs",
+      "description": "Expert repairs for everything from minor dents to major engine work."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/15",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=15"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "date": "2026-06-17T20:52:12",
+    "date_gmt": "2026-06-17T20:52:12",
+    "guid": {
+      "rendered": "http://driveflow-backend.local/?post_type=service&#038;p=14"
+    },
+    "modified": "2026-06-17T21:06:09",
+    "modified_gmt": "2026-06-17T21:06:09",
+    "slug": "vehicle-inspection",
+    "status": "publish",
+    "type": "service",
+    "link": "http://localhost:5173/#service-vehicle-inspection",
+    "title": {
+      "rendered": "Vehicle Inspection"
+    },
+    "featured_media": 0,
+    "template": "",
+    "class_list": [
+      "post-14",
+      "service",
+      "type-service",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "jp_title": "車両検査",
+      "illustration": "inspection",
+      "description": "Thorough multi-point inspection to keep your car road-safe and compliant."
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services/14",
+          "targetHints": {
+            "allow": ["GET"]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/services"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/types/service"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://driveflow-backend.local/wp-json/wp/v2/media?parent=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
